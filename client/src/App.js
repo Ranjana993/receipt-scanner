@@ -34,7 +34,7 @@ function App() {
     formData.append('image', selectedFile);
 
     try {
-      const response = await fetch('http://localhost:5000/api/process-receipt', {
+      const response = await fetch('https://receipt-scanner-phi.vercel.app/api/process-receipt', {
         method: 'POST',
         body: formData,
       });
